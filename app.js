@@ -1,8 +1,8 @@
 import express from 'express';
 import morgan from 'morgan';
 
-import AppError from './utils/appError';
-import globalErrorHandler from './controllers/errorController.js';
+import AppError from './utils/appError.js';
+import globalErrorHandler from './controller/errorController.js';
 
 const app = express();
 

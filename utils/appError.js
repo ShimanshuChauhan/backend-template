@@ -1,5 +1,5 @@
 class AppError extends Error {
-  super(message, statusCode) {
+  constructor(message, statusCode) {
     super(message);
     this.statusCode = statusCode;
     this.status = `${statusCode}`.startsWith('4') ? 'fail' : 'error'; // Determines if the status is a client error (4xx) or server error (5xx)
