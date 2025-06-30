@@ -13,9 +13,10 @@ A robust Node.js backend template built with Express.js, featuring comprehensive
 - [Error Handling](#error-handling)
 - [Available Scripts](#available-scripts)
 - [Dependencies](#dependencies)
+- [Next Steps](#next-steps)
 - [Contributing](#contributing)
 
-## ✨ Features
+## <a name="features"></a>✨ Features
 
 - **Express.js** framework for building RESTful APIs
 - **MongoDB** integration with Mongoose ODM
@@ -25,7 +26,7 @@ A robust Node.js backend template built with Express.js, featuring comprehensive
 - **Async error handling** utilities
 - **Production-ready** error responses
 
-## 🚀 Prerequisites
+## <a name="prerequisites"></a>🚀 Prerequisites
 
 Before you begin, ensure you have the following installed on your machine:
 
@@ -33,7 +34,7 @@ Before you begin, ensure you have the following installed on your machine:
 - **npm** (Node Package Manager)
 - **MongoDB** (local installation or MongoDB Atlas account)
 
-## 📦 Installation
+## <a name="installation"></a>📦 Installation
 
 1. **Clone the repository** (or download the template):
    ```bash
@@ -52,7 +53,7 @@ Before you begin, ensure you have the following installed on your machine:
    touch config.env
    ```
 
-## ⚙️ Configuration
+## <a name="configuration"></a>⚙️ Configuration
 
 Create a `config.env` file in the root directory and add the following environment variables:
 
@@ -71,7 +72,7 @@ DATABASE_PASSWORD = password
 - `DATABASE_URI`: MongoDB connection string
 - Replace database password with `<PASSWORD>`
 
-## 🏃‍♂️ Usage
+## <a name="usage"></a>🏃‍♂️ Usage
 
 ### Starting the Development Server
 
@@ -90,7 +91,7 @@ The server will start and you should see:
 The template includes a basic GET endpoint:
 - **GET** `/` - Returns "Server is running" message
 
-## 📁 Project Structure
+## <a name="project-structure"></a>📁 Project Structure
 
 ```
 backend-template/
@@ -113,7 +114,7 @@ backend-template/
 - **`utils/appError.js`**: Custom error class for operational errors
 - **`utils/catchAsync.js`**: Utility function to catch async errors in route handlers
 
-## 🔧 Error Handling
+## <a name="error-handling"></a>🔧 Error Handling
 
 This template includes a comprehensive error handling system:
 
@@ -142,7 +143,7 @@ app.get('/api/data', catchAsync(async (req, res, next) => {
 - **Development**: Detailed error information including stack traces
 - **Production**: Generic error messages for security
 
-## 📜 Available Scripts
+## <a name="available-scripts"></a>📜 Available Scripts
 
 Currently available scripts in `package.json`:
 
@@ -163,7 +164,7 @@ Add these to your `package.json` scripts section:
 }
 ```
 
-## 📚 Dependencies
+## <a name="dependencies"></a>📚 Dependencies
 
 ### Production Dependencies
 - **express**: Web framework for Node.js
@@ -174,7 +175,7 @@ Add these to your `package.json` scripts section:
 - **morgan**: HTTP request logger middleware
 - **nodemon**: Automatically restarts the server when file changes are detected during development 
 
-## 🚀 Next Steps
+## <a name="next-steps"></a>🚀 Next Steps
 
 After setting up the template, you can:
 
@@ -186,7 +187,7 @@ After setting up the template, you can:
 6. **Add authentication**: Implement JWT-based authentication
 7. **Add testing**: Set up Jest or Mocha for testing
 
-## 🤝 Contributing
+## <a name="contributing"></a>🤝 Contributing
 
 1. Fork the repository
 2. Create a feature branch
